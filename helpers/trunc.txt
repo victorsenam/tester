@@ -1,0 +1,1 @@
+Saída truncada para 80 linhas
