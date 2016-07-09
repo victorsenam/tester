@@ -1,0 +1,44 @@
+
+mkdir: é impossível criar o diretório “cases”: Arquivo existe
+make: 'generator/generator' is up to date.
+make: 'validator/validator' is up to date.
+Generating Case generated_000
+Generating Case generated_001
+Generating Case generated_002
+Generating Case generated_003
+Generating Case generated_004
+Generating Case generated_005
+Generating Case generated_006
+Generating Case generated_007
+Generating Case generated_008
+Generating Case generated_009
+Generating Case generated_010
+Generating Case generated_011
+Generating Case generated_012
+Generating Case generated_013
+Generating Case generated_014
+Generating Case generated_015
+Generating Case generated_016
+Generating Case generated_017
+Generating Case generated_018
+Generating Case generated_019
+Validating Case cases/generated_000.in
+Validating Case cases/generated_001.in
+Validating Case cases/generated_002.in
+Validating Case cases/generated_003.in
+Validating Case cases/generated_004.in
+Validating Case cases/generated_005.in
+Validating Case cases/generated_006.in
+Validating Case cases/generated_007.in
+Validating Case cases/generated_008.in
+Validating Case cases/generated_009.in
+Validating Case cases/generated_010.in
+Validating Case cases/generated_011.in
+Validating Case cases/generated_012.in
+Validating Case cases/generated_013.in
+Validating Case cases/generated_014.in
+Validating Case cases/generated_015.in
+Validating Case cases/generated_016.in
+Validating Case cases/generated_017.in
+Validating Case cases/generated_018.in
+Validating Case cases/generated_019.in

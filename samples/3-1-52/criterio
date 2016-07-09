@@ -1,0 +1,19 @@
+[-5] : Hífens :/
+[-15] : Erro de lógica
+[-10] : Erro bobo
+[-10] : Não quebra em caracteres nulos
+[-15] : Não ordenou lexicográfico
+[-15] : Não ordenou por frequência
+[-20] : Não conta frequência
+[-10] : Formato errado
+[-20] : TLE
+[-10] : LowerCase
+
+[+5] : Código Bom
+[+5] : Solução Ótima
+
+sh ../../run.sh
+[^\\p{L}\\p{Nd}\\-]+
+
+import java.util.*;
+import edu.princeton.cs.algs4.*;

@@ -1,0 +1,4 @@
+
+LOG DE COMPILAÇÃO E TESTE
+Existem três métodos de compilação, eles estão indicados, se um falha eu parto pro outro. Então se quiser entender o porque não compilou, verifique os 3.
+Segue também o log do corretor, pode ser interessante para descobrir a natureza de seus erros.

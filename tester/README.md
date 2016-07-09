@@ -29,7 +29,8 @@ This program also copies the content of `standart/` into the target folder and d
 Every precoded judge outputs in portuguese.
 
 ### simple.sh
-Classical correction judge (each test gets Accepted, Wrong Answer, Runtime Error or Time Limit Exceded) and outputs these quantities to judge.out (used in `4-2-35`). It also provides an idea of multiple correction methods.
+Classical correction judge (each test gets Accepted, Wrong Answer, Runtime Error or Time Limit Exceded) and outputs these quantities to judge.out (used in `4-2-35`). It also provides an idea of multiple compilation methods.
+Also, it relies on submission's main, it doesn't use a Runner.
 
 ### partial\_single.sh
 Partial correction with interesting add-ons (used in `5-2-8`). It accepts files with both 1-indexed and 0-indexed outputs, it removes null chars from output.

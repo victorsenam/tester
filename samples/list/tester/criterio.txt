@@ -1,0 +1,80 @@
+Explicação dos possíveis erros cometidos no exercício List. Erros marcados como **leve** não merecem um desconto de 10 pontos sozinhos. Se um método seu só tem um erro **leve** e eu tirei 10 pontos, pode reclamar.  Se um método seu tem um erro **grave** é entendido que isso prejudica fundamentalmente o trabalho e um desconto muito maior do que 10 pontos pode ser aplicado.
+
+# Erros
+## List()
+1. extends Comparable<Item>
+
+    Não era necessário que o Item fosse comparável para realizar o que foi proposto. Bastava usar uma HashTable para a segunda tabela de símbolos.
+
+## add(int, Item)
+1. Método sem complexidade esperada
+2. Erro 2 de addFront() + addBack() (não cometeu lá, mas cometeu aqui) quando adicionando na primeira ou na ultima posição
+3. Quebra com add no começo ou no fim
+    
+    Bastava checar se o add é no começo ou no fim e chamar addFront ou addBack ao invés. Eu incluo aqui as vezes onde o add não pode ser a primeira operação.
+
+4. Insere item com chave dada, não posição dada **grave** [-40]
+5. Usa Hashing sem tratar colisões
+6. Não atualiza todas as estruturas usadas
+    
+    Por exemplo, você pode estar usando duas symbol tables para representar sua list (como sugerido) e esqueceu de dar add em uma delas em alguma situação
+
+7. Insere na posição i+1 ao invés de inserir na posição i
+8. Usa uma chave pior do que a média para inserir elementos
+9. Outros erros graves **grave**. Talvez eu tenha tido alguma dificuldade para descrever o erro. Se quiser uma explicação melhor procure conversar comigo.
+
+## delete(int)
+1. Método sem complexidade esperada
+2. Usa Hashing sem tratar colisões
+3. Quebra com delete no começo ou no fim
+    
+    Bastava checar se o delete é no começo ou no fim e chamar deleteFront ou deleteBack ao invés.
+
+4. Não implementado
+
+## get(int)
+1. Método sem complexidade esperada
+
+## addFront() + addBack()
+1. Método sem complexidade esperada
+2. Limitado **leve**
+
+    Se você fizer muitos (por volta de 50) addFronts ou addBacks o seu programa vai quebrar por causa da precisão do ponto flutuante, ou seja, você vai passar a inserir itens com chaves repetidas na sua estrutura.
+    É complicado evitar este erro no add em posições arbitrárias, então esta limitação é aceita nestes casos, mas é fácil evitar que isso ocorra em addFronts e addBacks, portanto era esperado que isso fosse evitado.
+
+3. Não pode ser chamado em uma lista vazia
+4. addFront Coloca item como segundo, não primeiro 
+5. Trocou front com back **leve**
+
+## deleteFront() + deleteBack()
+1. Método sem complexidade esperada
+2. Ordem
+
+    A lista, como descrita no enunciado, tem uma ordem dada pelas posições de inserções nas queries de add, ou seja, diferente da ordem dos itens colocados. Ao realizar o deleteFront e o deleteBack, você removeu, da sua estrutura, o item com menor valor, não com menor chave. 
+    Note que, se você fez isso com o método valMin (ou valMax) aplicado à uma RedBlackBST, você ainda gastou tempo linear para encontrar este valor (como estudado, a árvore rubro-negra guarda seus itens ordenados por chave, logo, encontrar o item de valor mínimo requer que ela seja visitada inteira).
+
+3. Trocou front com back **leve**
+
+## size() + isEmpty()
+1. Método sem complexidade esperada
+
+## contains(Item)
+1. Método sem complexidade esperada
+2. Usa Hashing sem tratar colisões
+3. Às vezes dá a resposta errada
+
+## delete(Item)
+1. Método sem complexidade esperada
+2. Usa Hashing sem tratar colisões
+3. Não decresce o contador **leve**
+4. Chamou o método de deleteItem, não de delete **leve**
+
+## iterator()
+1. Não itera pelos itens na ordem da lista **leve**
+2. Não itera por todos os itens
+3. Itera pelas chaves, não pelos valores
+4. Não implementado
+5. Loop infinito
+
+# Bônus
+- [+5] Tratou repetições
